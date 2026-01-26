@@ -64,8 +64,8 @@ Large sized `tab_style` avatars and `Show_author_on_categories_page` disabled:
 
    
 ---
-**Discourse Meta Topic**: [insert topic link here]
+**Discourse Meta Topic**: https://meta.discourse.org/t/discourse-topic-list-author-posters/394364
 
-**Support**: For issues or feature requests, please post in the [Meta topic](https://#) or start a PR on this repo.  
+**Support**: For issues or feature requests, please post in the [Meta topic](https://meta.discourse.org/t/discourse-topic-list-author-posters/394364) or start a PR on this repo.  
 
 **To hire me or buy me coffee**: visit me here: [Lilly@Discourse Meta](https://meta.discourse.org/u/Lilly/summary).
