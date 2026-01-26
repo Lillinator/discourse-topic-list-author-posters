@@ -1,9 +1,12 @@
 # Discourse Topic List Author & Posters
 
 ## Overview
-This Discourse theme component inserts a topic author avatar in all topic list routes and has settings that let the admin specify avatar shape and size. There is also a setting to make the posters' avatars column display only the latest (most recent) poster, but only if there is more than one participant in the topic. 
+This Discourse theme component inserts a topic author avatar into the first column of all topic list routes and has settings that let the admin specify avatar shape and size. Also, the author’s avatar will not show as first avatar in the posters list.
 
-In addition, admins can also choose to display the topic author on the category page when latest topic list views are enabled (i.e.: `Categories with latest topics`), and there are avatar size and shape options as well.
+There is also a setting to make the posters avatars column display only the latest (most recent) poster, but only if there is more than one topic participant. Thus, the author’s avatar will only if there are other posters in the topic.
+
+In addition, admins can also choose to display the topic author on the category page when latest topic list views are enabled (i.e.: Categories with latest topics), and there are avatar size and shape options as well.
+
 
 ## Installation and Configuration 
 
@@ -12,7 +15,6 @@ In addition, admins can also choose to display the topic author on the category 
 
 ## Settings
 
-<img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/b8b7a887-bc50-401c-8d83-8dec1989a06d" />
 
 |Settings | Description|
 |--- | ---|
@@ -29,13 +31,9 @@ Here are screenshots with different avatar size and shape, also showing with exp
 
 ### Topic list pages
 
-<img width="60%" height="60%" alt="image" src="https://github.com/user-attachments/assets/61813c3c-3f37-46ff-8221-2cd0596e20cc" />
-
-<img width="60%" height="60%" alt="image" src="https://github.com/user-attachments/assets/4ac5f5b5-f99a-4bb3-a9f9-daf21ea1e1fc" />
 
 ### Categories page topic list
 
-<img width="60%" height="60%" alt="image" src="https://github.com/user-attachments/assets/e1082fc6-bdda-4c49-8326-017e37634a35" />
 
 ## Notes
 
