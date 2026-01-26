@@ -42,13 +42,13 @@
 
   //* Hide OP avatar and apply formatting where needed */
   
-  @if $topic_list_show_last_poster_only == "false" {
+@if $topic_list_show_last_poster_only == "false" {
      td.posters {
        width: 160px !important;
-     }
-     a:first-child .avatar {
+       > a:first-child .avatar {
        display: none;
-    }
+       }
+     }
   }
   
   .posters {
