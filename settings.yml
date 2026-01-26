@@ -1,0 +1,57 @@
+topic_list_author_avatar_size:
+  default: medium
+  type: enum
+  refresh: true
+  choices:
+   - large
+   - medium
+   - small
+  description:
+    en: "Size of the author avatar in all topic list pages, including those in user inboxes and profiles (ie: activity, bookmarks, replies, etc.)."
+
+topic_list_author_avatar_border_radius:
+  default: 50%
+  type: enum
+  choices:
+    - 0%
+    - 15%
+    - 20%
+    - 30%
+    - tab_style
+  description:
+    en: "Shape of author avatars in topic lists. 50% = circle, 0% = square, tab_style = rounded left corners."
+
+topic_list_show_last_poster_only:
+  type: bool
+  default: false
+  description:
+    en: "Display only the most recent poster in the posters column if there are more than one participant. Leave disabled for default group of topic participants."
+
+show_author_on_categories_page:
+  type: bool
+  default: true
+  description:
+    en: "Display the topic author avatar in the topic list on the categories page. Leave disabled for default last poster avatar."
+
+categories_page_topic_avatar_size:
+  default: medium
+  type: enum
+  refresh: true
+  choices:
+   - large
+   - medium
+   - small
+  description:
+    en: "Size of the author or last poster avatar in the topic list on the categories page."
+
+categories_page_avatar_border_radius:
+  default: 50%
+  type: enum
+  choices:
+    - 0%
+    - 15%
+    - 20%
+    - 30%
+    - tab_style
+  description:
+    en: "Shape of author avatars in the topic list on the categories page. 50% = circle, 0% = square, tab_style = rounded left corners."

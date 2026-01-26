@@ -1,0 +1,7 @@
+en:
+  theme_metadata:
+    description: "Adds a customizable author column to topic lists with avatar size and shape controls"
+  
+  # Column headers
+  author: "Author"
+  last_poster: "Last Poster"
