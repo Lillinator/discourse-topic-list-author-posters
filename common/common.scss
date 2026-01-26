@@ -40,14 +40,18 @@
     }
   }
 
-  //* Hide OP avatar and remove shadow/borders when multiple participants exist */
+  //* Hide OP avatar and apply formatting where needed */
   
   @if $topic_list_show_last_poster_only == "false" {
-     td.posters a:first-child .avatar {
-      display: none;
+     td.posters {
+       width: 160px !important;
+     }
+     a:first-child .avatar {
+       display: none;
     }
   }
-  td.posters {
+  
+  .posters {
     a:first-child .avatar.latest:not(.single) {
       box-shadow: none;
       border: none;
@@ -100,8 +104,7 @@
 
   //** When `Topic_list_show_last_poster_only' is selected, align the last poster header with other header titles */
   td.posters {
-      padding-top: 1em;
-      width: 160px !important;
+      padding-top: 1em !important;
   }
 }
 
