@@ -1,11 +1,8 @@
 {
-  "name": "Purple Axolotl",
+  "name": "Discourse Topic List Author Posters",
   "component": true,
   "authors": "Lilly",
-  "about_url": "https://github.com/Lillinator/purple-axolotl/blob/main/README.md",
-  "license_url": "https://github.com/Lillinator/purple-axolotl/blob/main/LICENSE",
-  "theme_version": "0.0.1",
-  "minimum_discourse_version": null,
-  "maximum_discourse_version": null,
-  "assets": {}
+  "about_url": "https://github.com/Lillinator/discourse-topic-list-author-posters/blob/main/README.md",
+  "license_url": "https://github.com/Lillinator/discourse-topic-list-author-posters/blob/main/LICENSE",
+  "theme_version": "1.0.0"
 }
