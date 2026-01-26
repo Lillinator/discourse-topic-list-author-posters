@@ -1,0 +1,157 @@
+@use "lib/viewport";
+
+:root {
+//** Border-radius for tab_style setting  */
+  --d-avatar-border-radius-tab-style: 12px 0 0 12px;
+}
+
+//** MIXINS - Avatar border radius based on settings */
+
+// Apply avatar border radius based on theme setting
+@mixin avatar-border-radius($setting) {
+  @if $setting == "tab_style" {
+    border-radius: var(--d-avatar-border-radius-tab-style) !important;
+  } @else {
+    border-radius: #{$setting} !important;
+  }
+}
+
+//** TOPIC LIST - Main topic list pages  */
+
+.topic-list {
+  
+  //** Posters column - show only last poster when setting enabled */
+  @if $topic_list_show_last_poster_only == "true" {
+    th.posters,
+    td.posters {
+      width: 50px !important;
+      min-width: 50px !important;
+      text-align: center;
+      
+      > a {
+        float: none;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+    
+    th.posters.topic-list-data {
+      white-space: nowrap;
+    }
+  }
+
+  //* Remove shadow/border from first poster when multiple participants exist */
+  .posters {
+    a:first-child .avatar.latest:not(.single) {
+      box-shadow: none;
+      border: none;
+      position: relative;
+      left: -2px;
+    }
+
+    > a {
+      float: left;
+      padding-left: 6px;
+      margin-right: 2px;
+      
+      &.posters-more-count {
+        font-size: var(--font-down-1);
+      }
+    }
+  }
+
+  //** Custom author column formatting */
+  td.custom-author-column {
+    width: 60px !important;
+    text-align: center;
+    padding-top: 1em;
+    border-bottom: 0px !important;
+    
+    @include viewport.until(md) {
+      padding-top: 0.2em;
+    }
+    
+    //** Avatar border radius styling */
+    img.avatar {
+      @include avatar-border-radius($topic_list_author_avatar_border_radius);
+    }
+  }
+
+  //** General cell formatting */
+  .topic-list-data {
+    vertical-align: top !important;
+    
+    &.bulk-select {
+      text-align: center;
+      padding-top: 1em;
+    }
+  }
+
+  //** Fix inconsistent padding on post count badges for vertical alignment */
+  td.num .badge-posts {
+    padding: 0 !important;
+  }
+
+  //** When `Topic_list_show_last_poster_only' is selected, align the last poster header with other header titles */
+  td.posters {
+      padding-top: 1em;
+      width: 160px !important;
+  }
+}
+
+//** USER INBOX - Apply same avatar styling to inbox topic lists */
+
+.post-list-item__header.info img.avatar {
+  @include avatar-border-radius($topic_list_author_avatar_border_radius);
+}
+
+//** HIDE AUTHOR COLUMN - Specific contexts (desktop only) */
+
+//** Hide custom author column in suggested/related topics and user activity pages /
+//** Mobile excluded due to `.pull-left` class making targeting difficult /
+//** Note this is same behavior as default */
+@include viewport.from(md) {
+  .more-topics__list,
+  #suggested-topics {
+    .custom-author-column,
+    th.author {
+      display: none;
+    }
+  }
+  
+  body.user-messages-page,
+  body.user-activity-page {
+    td.custom-author-column,
+    th.author {
+      display: none;
+    }
+  }
+}
+
+//** CATEGORY PAGE - Topic list avatars */
+
+body.categories-list .latest-topic-list-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 0.5em;
+  
+  .topic-poster {
+    padding-top: 6px !important;
+    padding-right: 0.8em !important;
+    width: auto !important;
+    
+    img.avatar {
+      @include avatar-border-radius($categories_page_avatar_border_radius);
+      
+      //** Dynamic sizing based on setting */
+      $avatar-sizes: (
+        "small": 32px,
+        "medium": 40px,
+        "large": 48px
+      );
+      $size: map-get($avatar-sizes, $categories_page_topic_avatar_size);
+      width: $size;
+      height: $size;
+    }
+  }
+}
