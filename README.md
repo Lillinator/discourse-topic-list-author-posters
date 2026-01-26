@@ -1,4 +1,4 @@
-<img width="3044" height="1902" alt="image" src="https://github.com/user-attachments/assets/2efb0fa3-e53a-4f1b-92ab-d8a326994814" /># Discourse Topic List Author & Posters
+# Discourse Topic List Author & Posters
 
 ## Overview
 This Discourse theme component inserts a topic author avatar into the first column of all topic list routes and has settings that let the admin specify avatar shape and size. Also, the author's avatar will not show as the first avatar in the posters list.
