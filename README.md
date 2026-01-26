@@ -38,9 +38,9 @@ With default settings:
 
 <img width="690" height="423" alt="image" src="https://github.com/user-attachments/assets/feb0904f-1242-4bb3-8ed8-bd414e400f97" />
 
-Medium sized avatars with `0%` border-radius (square) with `Topic_list_show_last_poster_only` enabled, and summary gists expanded:
+Small avatars with `15%` border-radius shape and `Topic_list_show_last_poster_only` enabled:
 
-<img width="690" height="427" alt="image" src="https://github.com/user-attachments/assets/edc32569-2431-4f1e-9926-90dca9cbd7be" />
+<img width="690" height="425" alt="image" src="https://github.com/user-attachments/assets/7a06eb1c-489a-480b-a0a7-e7282370971a" />
 
 ### Categories page topic list
 
