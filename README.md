@@ -15,6 +15,8 @@ In addition, admins can also choose to display the topic author on the category 
 
 ## Settings
 
+<img width="60%" height="60%" alt="image" src="https://github.com/user-attachments/assets/1047d186-0450-4bab-9c6f-de24f7798062" />
+
 
 |Settings | Description|
 |--- | ---|
@@ -29,11 +31,19 @@ In addition, admins can also choose to display the topic author on the category 
 ## Screenshots
 Here are screenshots with different avatar size and shape, also showing with expanded AI summary gists. 
 
+<img width="3044" height="1868" alt="image" src="https://github.com/user-attachments/assets/a9cad8f9-e2bd-4054-a895-dd5a3bc3b667" />
+<img width="3044" height="1886" alt="image" src="https://github.com/user-attachments/assets/cc574c39-edfa-4cdc-8fa6-bb8a494f06d7" />
+<img width="3044" height="1878" alt="image" src="https://github.com/user-attachments/assets/27a7518d-8665-46c0-b158-0fba10356afb" />
+<img width="3044" height="1884" alt="image" src="https://github.com/user-attachments/assets/16eabeab-f32a-4727-8ed3-e8212f02ab99" />
+
 ### Topic list pages
 
 
 ### Categories page topic list
 
+<img width="690" height="431" alt="image" src="https://github.com/user-attachments/assets/c14be493-9e86-4e9a-8353-decebcc14c21" />
+
+<img width="690" height="429" alt="image" src="https://github.com/user-attachments/assets/07adb661-1939-4937-82d3-18ae61e487f8" />
 
 ## Notes
 
