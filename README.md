@@ -1,11 +1,11 @@
-# Discourse Topic List Author & Posters
+<img width="3044" height="1902" alt="image" src="https://github.com/user-attachments/assets/2efb0fa3-e53a-4f1b-92ab-d8a326994814" /># Discourse Topic List Author & Posters
 
 ## Overview
-This Discourse theme component inserts a topic author avatar into the first column of all topic list routes and has settings that let the admin specify avatar shape and size. Also, the author’s avatar will not show as first avatar in the posters list.
+This Discourse theme component inserts a topic author avatar into the first column of all topic list routes and has settings that let the admin specify avatar shape and size. Also, the author's avatar will not show as the first avatar in the posters list.
 
-There is also a setting to make the posters avatars column display only the latest (most recent) poster, but only if there is more than one topic participant. Thus, the author’s avatar will only if there are other posters in the topic.
+There is also a setting to make the posters avatars column display only the latest (most recent) poster, but only if there is more than one topic participant. Thus, the author's avatar will only show if there are other posters in the topic.
 
-In addition, admins can also choose to display the topic author on the category page when latest topic list views are enabled (i.e.: Categories with latest topics), and there are avatar size and shape options as well.
+In addition, admins can also choose to display the topic author on the category page when latest topic list views are enabled (i.e.: `Categories with latest topics`), and there are avatar size and shape options as well.
 
 
 ## Installation and Configuration 
@@ -29,21 +29,37 @@ In addition, admins can also choose to display the topic author on the category 
 
 
 ## Screenshots
-Here are screenshots with different avatar size and shape, also showing with expanded AI summary gists. 
+Here are some screenshots with different avatar size and shape settings, also showing with expanded AI summary gists.
 
-<img width="3044" height="1868" alt="image" src="https://github.com/user-attachments/assets/a9cad8f9-e2bd-4054-a895-dd5a3bc3b667" />
-<img width="3044" height="1886" alt="image" src="https://github.com/user-attachments/assets/cc574c39-edfa-4cdc-8fa6-bb8a494f06d7" />
-<img width="3044" height="1878" alt="image" src="https://github.com/user-attachments/assets/27a7518d-8665-46c0-b158-0fba10356afb" />
-<img width="3044" height="1884" alt="image" src="https://github.com/user-attachments/assets/16eabeab-f32a-4727-8ed3-e8212f02ab99" />
 
 ### Topic list pages
 
+With default settings:
+
+<img width="690" height="423" alt="image" src="https://github.com/user-attachments/assets/feb0904f-1242-4bb3-8ed8-bd414e400f97" />
+
+Large `tab_style` avatar shape with summary gists expanded:
+
+<img width="690" height="427" alt="image" src="https://github.com/user-attachments/assets/71fac934-d35c-4126-a6aa-4ec1de918d79" />
+
+Small avatars with `15%` border-radius shape and `Topic_list_show_last_poster_only` enabled:
+
+<img width="690" height="425" alt="image" src="https://github.com/user-attachments/assets/dafba478-1347-4b42-87de-50fec7f609df" />
+
+Medium sized avatars with `0%` border-radius (square) with `Topic_list_show_last_poster_only` enabled, and summary gists expanded:
+
+<img width="690" height="427" alt="image" src="https://github.com/user-attachments/assets/edc32569-2431-4f1e-9926-90dca9cbd7be" />
 
 ### Categories page topic list
 
-<img width="690" height="431" alt="image" src="https://github.com/user-attachments/assets/c14be493-9e86-4e9a-8353-decebcc14c21" />
+Default component settings, with medium sized round avatars and `Show_author_on_categories_page` enabled:
 
-<img width="690" height="429" alt="image" src="https://github.com/user-attachments/assets/07adb661-1939-4937-82d3-18ae61e487f8" />
+<img width="690" height="431" alt="image" src="https://github.com/user-attachments/assets/f6677e94-0069-4c11-87cf-cf64c7cb3553" />
+
+Large sized `tab_style` avatars and `Show_author_on_categories_page` disabled:
+
+<img width="690" height="429" alt="image" src="https://github.com/user-attachments/assets/3d38031a-e40f-4414-9f4d-23a8110f75b7" />
+
 
 ## Notes
 
