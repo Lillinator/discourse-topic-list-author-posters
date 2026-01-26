@@ -37,7 +37,8 @@ Here are some screenshots with different avatar size and shape settings, also sh
 With default settings:
 
 <img width="690" height="423" alt="image" src="https://github.com/user-attachments/assets/feb0904f-1242-4bb3-8ed8-bd414e400f97" />
-<br>
+
+
 
 Small avatars with `15%` border-radius shape and `Topic_list_show_last_poster_only` enabled:
 
