@@ -38,23 +38,11 @@ With default settings:
 
 <img width="690" height="423" alt="image" src="https://github.com/user-attachments/assets/feb0904f-1242-4bb3-8ed8-bd414e400f97" />
 
-Large `tab_style` avatar shape with summary gists expanded:
-
-<img width="690" height="427" alt="image" src="https://github.com/user-attachments/assets/71fac934-d35c-4126-a6aa-4ec1de918d79" />
-
-Small avatars with `15%` border-radius shape and `Topic_list_show_last_poster_only` enabled:
-
-<img width="690" height="425" alt="image" src="https://github.com/user-attachments/assets/dafba478-1347-4b42-87de-50fec7f609df" />
-
 Medium sized avatars with `0%` border-radius (square) with `Topic_list_show_last_poster_only` enabled, and summary gists expanded:
 
 <img width="690" height="427" alt="image" src="https://github.com/user-attachments/assets/edc32569-2431-4f1e-9926-90dca9cbd7be" />
 
 ### Categories page topic list
-
-Default component settings, with medium sized round avatars and `Show_author_on_categories_page` enabled:
-
-<img width="690" height="431" alt="image" src="https://github.com/user-attachments/assets/f6677e94-0069-4c11-87cf-cf64c7cb3553" />
 
 Large sized `tab_style` avatars and `Show_author_on_categories_page` disabled:
 
