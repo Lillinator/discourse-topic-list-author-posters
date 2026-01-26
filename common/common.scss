@@ -40,7 +40,13 @@
     }
   }
 
-  //* Remove shadow/border from first poster when multiple participants exist */
+  //* Hide OP avatar and remove shadow/borders when multiple participants exist */
+  
+  @if $topic_list_show_last_poster_only == "false" {
+     td.posters a:first-child .avatar {
+      display: none;
+    }
+  }
   .posters {
     a:first-child .avatar.latest:not(.single) {
       box-shadow: none;
