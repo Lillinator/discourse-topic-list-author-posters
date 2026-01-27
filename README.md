@@ -7,6 +7,9 @@ There is also a setting to make the posters avatars column display only the late
 
 In addition, admins can also choose to display the topic author on the category page when latest topic list views are enabled (i.e.: `Categories with latest topics`), and there are avatar size and shape options as well.
 
+The topic row contents have also been vertically aligned top for visual consistency.
+
+In small viewport (mobile size), the author will appear where latest poster avatar is. 
 
 ## Installation and Configuration 
 
