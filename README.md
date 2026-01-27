@@ -11,6 +11,10 @@ The topic row contents have also been vertically aligned top for visual consiste
 
 In small viewport (mobile size), the author will appear where latest poster avatar is. 
 
+This topic works well with [Topic List Excerpts](https://github.com/discourse/discourse-topic-excerpts) and Discourse AI summary gists.
+
+
+
 ## Installation and Configuration 
 
 - Install this theme component as per the instructions at [Installing a theme or theme component](https://meta.discourse.org/t/installing-a-theme-or-theme-component/63682).
@@ -54,7 +58,6 @@ Large sized `tab_style` avatars and `Show_author_on_categories_page` disabled:
 
 ## Notes
 
-- Does not work with the Topic Excerpts theme component (or other topic preview components).
 - Inserts the author's avatar and changes the posters column where expected in profile page tabs.
 - Mobile behavior is the same as default in topic footer lists (suggested/related topics) and in profile and inbox tab pages.
 - Not really compatible with horizon theme.
