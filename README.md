@@ -57,7 +57,7 @@ Large sized `tab_style` avatars and `Show_author_on_categories_page` disabled:
 - Does not work with the Topic Excerpts theme component (or other topic preview components).
 - Inserts the author's avatar and changes the posters column where expected in profile page tabs.
 - Mobile behavior is the same as default in topic footer lists (suggested/related topics) and in profile and inbox tab pages.
-- Not really compatible with horizon theme. :slight_smile: 
+- Not really compatible with horizon theme.
 
    
 ---
