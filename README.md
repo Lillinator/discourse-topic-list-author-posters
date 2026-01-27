@@ -20,16 +20,14 @@ In small viewport (mobile size), the author will appear where latest poster avat
 
 <img width="60%" height="60%" alt="image" src="https://github.com/user-attachments/assets/1047d186-0450-4bab-9c6f-de24f7798062" />
 
-
 |Settings | Description|
 |--- | ---|
-|`Topic_list_author_avatar_size` | Size of avatars in the author avatar column of topic list page routes - `small`, `medium`, or `large`.|
-|`Topic_list_author_avatar_border_radius` | Avatar rounding on topic list page routes: `0%` = square -> `50%` = circle.  `tab_style` = rounded left corners|
-|`Topic_list_show_last_poster_only` | Show just the last poster avatar in the posters column, but only if there are more than one participant in the topic.|
-|`Show_author_on_categories_page` | Show the author avatar instead of the latest poster in topic lists on the categories page.|
-|`Category_page_topic_avatar_size` | Size of avatars in the author avatar column in categories page topic lists - `small`, `medium`, or `large`.|
-|`Category_page_avatar_border_radius` | Avatar rounding on categories page: `0%` = square -> `50%` = circle.  `tab_style` = rounded left corners |
-
+|`Topic list author avatar size` | Size of avatars in the author avatar column of topic list page routes - `small`, `medium`, or `large`.|
+|`Topic list author avatar border radius` | Avatar rounding on topic list page routes: `0%` = square -> `50%` = circle.  `tab_style` = rounded left corners|
+|`Topic list show las poster only` | Show just the last poster avatar in the posters column, but only if there are more than one participant in the topic.|
+|`Show author on categories page` | Show the author avatar instead of the latest poster in topic lists on the categories page.|
+|`Category page topic avatar size` | Size of avatars in the author avatar column in categories page topic lists - `small`, `medium`, or `large`.|
+|`Category page avatar border radius` | Avatar rounding on categories page: `0%` = square -> `50%` = circle.  `tab_style` = rounded left corners |
 
 ## Screenshots
 Here are some screenshots with different avatar size and shape settings, also showing with expanded AI summary gists.
@@ -56,14 +54,10 @@ Large sized `tab_style` avatars and `Show_author_on_categories_page` disabled:
 
 ## Notes
 
- - Does not work with the Topic Excerpts theme component (or other topic preview components).
- - Inserts author avatar and changes the posters column where expected in profile page tabs.
- - Mobile behavior is the same as default in topic footer lists (suggested/related topics) and in profile and inbox tab pages.
-
-
-## Possible future todos
- - Incorporate topic excerpts
- - Shape poster avatars
+- Does not work with the Topic Excerpts theme component (or other topic preview components).
+- Inserts the author's avatar and changes the posters column where expected in profile page tabs.
+- Mobile behavior is the same as default in topic footer lists (suggested/related topics) and in profile and inbox tab pages.
+- Not really compatible with horizon theme. :slight_smile: 
 
    
 ---
