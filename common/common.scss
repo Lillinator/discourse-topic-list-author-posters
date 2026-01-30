@@ -21,9 +21,9 @@
 .topic-list {
 
   .topic-list-header {
-    tr {
-      vertical-align: middle !important;
-    }
+    //tr {
+    //  vertical-align: middle !important;
+    //}
   
     th {
       vertical-align: middle !important;
@@ -34,7 +34,10 @@
   @if $topic_list_show_last_poster_only == "true" {
 
     
-    //th.posters,
+    th.posters {
+      text-align: center !important;
+    }
+    
     td.posters {
       width: 50px !important;
       min-width: 50px !important;
