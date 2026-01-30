@@ -19,10 +19,22 @@
 //** TOPIC LIST - Main topic list pages  */
 
 .topic-list {
+
+.topic-list-header {
+  tr {
+    vertical-align: middle !important;
+  }
+  
+  th {
+    vertical-align: middle !important;
+  }
+
   
   //** Posters column - show only last poster when setting enabled */
   @if $topic_list_show_last_poster_only == "true" {
-    th.posters,
+
+    
+    //th.posters,
     td.posters {
       width: 50px !important;
       min-width: 50px !important;
