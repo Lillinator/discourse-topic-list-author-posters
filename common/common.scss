@@ -32,7 +32,6 @@
   //** Posters column - show only last poster when setting enabled */
   @if $topic_list_show_last_poster_only == "true" {
 
-    
     th.posters {
       text-align: center !important;
     }
