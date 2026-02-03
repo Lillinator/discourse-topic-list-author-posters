@@ -21,19 +21,17 @@
 .topic-list {
 
   .topic-list-header {
-    //tr {
-    //  vertical-align: middle !important;
-    //}
-  
     th {
       vertical-align: middle !important;
     }
   }
-  
+  thead.topic-list-header th.author {
+    text-align: center !important;
+    padding-right: 0px !important;
+  }
   //** Posters column - show only last poster when setting enabled */
   @if $topic_list_show_last_poster_only == "true" {
 
-    
     th.posters {
       text-align: center !important;
     }
@@ -86,10 +84,16 @@
   }
 
   //** Custom author column formatting */
+
+  .topic-list-data:first-of-type {
+    padding-inline-start: 0px;
+  }
+  
   td.custom-author-column {
     width: 60px !important;
     text-align: center;
     padding-top: 1em;
+    padding-right: 0px;
     border-bottom: 0px !important;
     
     @include viewport.until(md) {
