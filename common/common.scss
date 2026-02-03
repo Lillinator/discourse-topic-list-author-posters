@@ -93,6 +93,7 @@
     width: 60px !important;
     text-align: center;
     padding-top: 1em;
+    padding-right: 0px;
     border-bottom: 0px !important;
     
     @include viewport.until(md) {
