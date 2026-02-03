@@ -86,6 +86,14 @@
   }
 
   //** Custom author column formatting */
+  th.authors {
+    text-align: center !important;
+  }
+
+  .topic-list-data:first-of-type {
+    padding-inline-start: 0px;
+  }
+  
   td.custom-author-column {
     width: 60px !important;
     text-align: center;
