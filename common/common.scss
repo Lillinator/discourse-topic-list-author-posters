@@ -27,6 +27,7 @@
   
     th {
       vertical-align: middle !important;
+      text-align: center !important;
     }
   }
   
@@ -86,9 +87,6 @@
   }
 
   //** Custom author column formatting */
-  th.custom-author-column {
-    text-align: center !important;
-  }
 
   .topic-list-data:first-of-type {
     padding-inline-start: 0px;
