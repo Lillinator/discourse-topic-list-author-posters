@@ -108,7 +108,7 @@
   }
 
   //** General cell formatting */
-  @if $vertially_align_row_top == "true" {
+  @if $vertically_align_row_top == "true" {
     td.topic-list-data {
         vertical-align: top !important;
     }
