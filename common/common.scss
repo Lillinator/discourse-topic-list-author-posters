@@ -167,8 +167,13 @@
 
 //** CATEGORY PAGE - Topic list avatars */
 
-body.categories-list .latest-topic-list-item {
+@if $vertically_align_row_top == "true" {
+ body.categories-list .latest-topic-list-item {
   display: flex;
+  } 
+}
+
+body.categories-list .latest-topic-list-item {
   align-items: flex-start;
   padding: 0.5em;
   
