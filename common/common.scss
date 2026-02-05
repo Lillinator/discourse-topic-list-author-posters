@@ -29,6 +29,7 @@
     text-align: center !important;
     padding-right: 0px !important;
   }
+  
   //** Posters column - show only last poster when setting enabled */
   @if $topic_list_show_last_poster_only == "true" {
 
