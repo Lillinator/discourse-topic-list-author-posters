@@ -31,7 +31,7 @@ vertically_align_row_top:
   type: bool
   default: true
   description:
-    en: "Vertially align the topic row to top. Disable this for middle verical alignment."    
+    en: "Vertically align the topic row to top. Disable this for middle vertical alignment."    
 
 show_author_on_categories_page:
   type: bool
