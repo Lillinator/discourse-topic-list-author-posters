@@ -27,7 +27,7 @@ topic_list_show_last_poster_only:
   description:
     en: "Display only the most recent poster in the posters column if there are more than one participant. Leave disabled for default group of topic participants."
 
-vertially_align_row_top:
+vertically_align_row_top:
   type: bool
   default: true
   description:
