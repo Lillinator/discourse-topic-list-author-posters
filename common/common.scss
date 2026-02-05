@@ -170,13 +170,19 @@
 @if $vertically_align_row_top == "true" {
  body.categories-list .latest-topic-list-item {
   display: flex;
+  align-items: flex-start;
   } 
 }
+@else {
 
 body.categories-list .latest-topic-list-item {
-  align-items: flex-start;
+  display: flex;
+  align-items: center;
   padding: 0.5em;
-  
+  }
+}
+body.categories-list .latest-topic-list-item {
+
   .topic-poster {
     padding-top: 6px !important;
     padding-right: 0.8em !important;
