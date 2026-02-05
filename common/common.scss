@@ -32,10 +32,9 @@
   
   //** Posters column - show only last poster when setting enabled */
   @if $topic_list_show_last_poster_only == "true" {
-
-    th.posters {
-      text-align: center !important;
-    }
+        th.posters {
+          text-align: center !important;
+        }
     
     td.posters {
       width: 50px !important;
@@ -56,7 +55,7 @@
 
   //* Hide OP avatar and apply formatting where needed */
   
-@if $topic_list_show_last_poster_only == "false" {
+  @if $topic_list_show_last_poster_only == "false" {
      td.posters {
        width: 160px !important;
        > a:first-child .avatar {
@@ -109,15 +108,23 @@
   }
 
   //** General cell formatting */
+  @if $vertially_align_row_top == "true" {
+    td.topic-list-data {
+        vertical-align: top !important;
+    }
+  } 
+  @else {
+    td.topic-list-data {
+        vertical-align: middle !important;
+    }
+  }
   td.topic-list-data {
-    vertical-align: top !important;
-    
     &.bulk-select {
       text-align: center;
       padding-top: 1em;
     }
-  }
-
+  } 
+  
   //** Fix inconsistent padding on post count badges for vertical alignment */
   td.num .badge-posts {
     padding: 0 !important;
