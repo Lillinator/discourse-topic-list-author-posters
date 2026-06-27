@@ -5,10 +5,9 @@ import CustomPostersHeader from "../components/custom-posters-header";
 import CustomPostersCell from "../components/custom-posters-cell";
 import CustomCategoriesLatestAvatar from "../components/custom-categories-latest-avatar";
 
-// Show topic author avatar on categories page if setting enabled
 export default apiInitializer((api) => {
-  if (settings.show_author_on_categories_page === true) {
-
+  // Show topic author avatar on categories page if setting enabled
+  if (settings.show_author_on_categories_page) {
     api.renderInOutlet(
       "latest-topic-list-item-topic-poster",
       CustomCategoriesLatestAvatar
@@ -17,6 +16,14 @@ export default apiInitializer((api) => {
 
   // Add topic author column on left side before the topic titles in topic lists 
   api.registerValueTransformer("topic-list-columns", ({ value: columns }) => {
+    // 1. Move the check inside the transformer callback (executes dynamically during render)
+    const site = api.container.lookup("service:site");
+    
+    // Bail out and do not modify columns if disabled on mobile
+    if (settings.disable_on_mobile && site.mobileView) {
+      return columns;
+    }
+
     columns.add(
       "topic-list-author",
       {
@@ -27,7 +34,7 @@ export default apiInitializer((api) => {
     );
 
     // Replace posters header AND poster column contents in topic lists if setting enabled 
-    if (settings.topic_list_show_last_poster_only === true) {
+    if (settings.topic_list_show_last_poster_only) {
       columns.replace("posters", { 
         item: CustomPostersCell, 
         header: CustomPostersHeader
@@ -37,6 +44,8 @@ export default apiInitializer((api) => {
     return columns;
   });
 
-    // Add topic author to Mobile view
-   api.renderInOutlet("topic-list-item-mobile-avatar", AuthorColumnContent);
+  // 2. Add topic author to Mobile view ONLY if setting is not disabled
+  if (!settings.disable_on_mobile) {
+    api.renderInOutlet("topic-list-item-mobile-avatar", AuthorColumnContent);
+  }
 });
