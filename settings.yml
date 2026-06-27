@@ -61,3 +61,10 @@ categories_page_avatar_border_radius:
     - tab_style
   description:
     en: "Shape of author avatars in the topic list on the categories page. 50% = circle, 0% = square, tab_style = rounded left corners."
+
+disable_on_mobile:
+  type: bool
+  default: false
+  description:
+    en: "Disable the component for mobile viewport."
+
