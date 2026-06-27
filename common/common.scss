@@ -1,22 +1,19 @@
 @use "lib/viewport";
 
-:root {
-//** Border-radius for tab_style setting  */
-  --d-avatar-border-radius-tab-style: 12px 0 0 12px;
-}
-
-//** MIXINS - Avatar border radius based on settings */
-
-// Apply avatar border radius based on theme setting
-@mixin avatar-border-radius($setting) {
-  @if $setting == "tab_style" {
-    border-radius: var(--d-avatar-border-radius-tab-style) !important;
-  } @else {
-    border-radius: #{$setting} !important;
+@mixin component-styles {
+  :root {
+    --d-avatar-border-radius-tab-style: 12px 0 0 12px;
   }
-}
 
-//** TOPIC LIST - Main topic list pages  */
+  @mixin avatar-border-radius($setting) {
+    @if $setting == "tab_style" {
+      border-radius: var(--d-avatar-border-radius-tab-style) !important;
+    } @else {
+      border-radius: #{$setting} !important;
+    }
+  }
+
+  //** TOPIC LIST - Main topic list pages  */
 
 .topic-list {
 
@@ -202,4 +199,14 @@ body.categories-list .latest-topic-list-item {
       height: $size;
     }
   }
+}
+}
+@if $disable_on_mobile == "true" {
+  // If disabled, only apply to desktop-sized viewports
+  @include viewport.from(md) {
+    @include component-styles;
+  }
+} @else {
+  // Otherwise, apply everywhere normally
+  @include component-styles;
 }
