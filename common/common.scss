@@ -1,17 +1,18 @@
 @use "lib/viewport";
 
-@mixin component-styles {
-  :root {
-    --d-avatar-border-radius-tab-style: 12px 0 0 12px;
-  }
+:root {
+  --d-avatar-border-radius-tab-style: 12px 0 0 12px;
+}
 
-  @mixin avatar-border-radius($setting) {
-    @if $setting == "tab_style" {
-      border-radius: var(--d-avatar-border-radius-tab-style) !important;
-    } @else {
-      border-radius: #{$setting} !important;
-    }
+@mixin avatar-border-radius($setting) {
+  @if $setting == "tab_style" {
+    border-radius: var(--d-avatar-border-radius-tab-style) !important;
+  } @else {
+    border-radius: #{$setting} !important;
   }
+}
+
+@mixin component-styles {
 
   //** TOPIC LIST - Main topic list pages  */
 
