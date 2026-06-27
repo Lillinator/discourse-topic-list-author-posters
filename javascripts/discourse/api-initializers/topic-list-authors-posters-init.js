@@ -6,14 +6,6 @@ import CustomPostersCell from "../components/custom-posters-cell";
 import CustomCategoriesLatestAvatar from "../components/custom-categories-latest-avatar";
 
 export default apiInitializer((api) => {
-  // Look up the site service to check the current layout
-  const site = api.container.lookup("service:site");
-  
-  // Bail out early if the setting is true and we are rendering the mobile layout
-  if (settings.disable_on_mobile && site.mobileView) {
-    return;
-  }
-
   // Show topic author avatar on categories page if setting enabled
   if (settings.show_author_on_categories_page) {
     api.renderInOutlet(
@@ -24,6 +16,14 @@ export default apiInitializer((api) => {
 
   // Add topic author column on left side before the topic titles in topic lists 
   api.registerValueTransformer("topic-list-columns", ({ value: columns }) => {
+    // 1. Move the check inside the transformer callback (executes dynamically during render)
+    const site = api.container.lookup("service:site");
+    
+    // Bail out and do not modify columns if disabled on mobile
+    if (settings.disable_on_mobile && site.mobileView) {
+      return columns;
+    }
+
     columns.add(
       "topic-list-author",
       {
@@ -44,6 +44,8 @@ export default apiInitializer((api) => {
     return columns;
   });
 
-  // Add topic author to Mobile view
-  api.renderInOutlet("topic-list-item-mobile-avatar", AuthorColumnContent);
+  // 2. Add topic author to Mobile view ONLY if setting is not disabled
+  if (!settings.disable_on_mobile) {
+    api.renderInOutlet("topic-list-item-mobile-avatar", AuthorColumnContent);
+  }
 });
